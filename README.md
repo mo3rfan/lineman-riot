@@ -1,6 +1,8 @@
 ![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
+![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)
 ![Dependency tracker](https://david-dm.org/Power-Inside/lineman-riot.svg)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Power-Inside/lineman-riot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
@@ -45,7 +47,7 @@ If you insist on more, you can try to implement your own custom javascript [riot
 
 > Note: I'm not sure if the custom parsers can be explicitly implemented in the browser. You might need to play around with the internal ["parser" option](https://github.com/ariesjia/grunt-riot#options) of grunt-riot that we use in this plugin. Extend the riot.compile object's options in your application.{coffee,js} config file. To see the current configuration, type 
 ```bash
-lineman config riot.compile`
+lineman config riot.compile
 ```
 
 ### HTML preprocessors
@@ -59,4 +61,4 @@ Jade also supports the javascript preprocessors mentioned above. Simply use `scr
 
 ## Credits
 
-Logo credits: [Asad Ulla Khan](https://github.com/Cyber-Logic)
+Logo credits: [Asad Ullah Khan](https://github.com/Cyber-Logic)
