@@ -8,6 +8,7 @@
 [![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
 [![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Power-Inside/lineman-riot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Power-Inside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
