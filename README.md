@@ -1,12 +1,14 @@
-# lineman-riot
+![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
-Plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
+lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
 ## Usage
 
 At the root of your lineman project, do
 
-`npm install lineman-riot --save-dev`
+```bash
+npm install lineman-riot --save-dev
+```
 
 > Note: If you're getting errors, you may want to try running npm as root (sudo). If you're on an ancient filesystem that does not support symlinks (FAT32 etc, like mine), try passing the --no-bin-links flag.
 
