@@ -13,6 +13,8 @@
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
 [![NPM](https://nodei.co/npm/lineman-riot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lineman-riot/)
+
+[![Build Status](https://semaphoreci.com/api/v1/projects/2449797f-b721-40e4-bc91-297e07ead4a3/432604/badge.svg)](https://semaphoreci.com/irfan/lineman-riot)      
 # Usage
 
 At the root of your lineman project, do
