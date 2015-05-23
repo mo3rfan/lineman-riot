@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Ready)](https://waffle.io/Power-Inside/lineman-riot)
 ![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
 ![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)
