@@ -1,5 +1,7 @@
 ![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
+![Dependency tracker](https://david-dm.org/Power-Inside/lineman-riot.svg)
+
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
 # Usage
@@ -32,7 +34,7 @@ RIOT compiler currently supports:
 ### Javascript preprocessors
 
 To write in one of the languages below, make sure you've installed their corresponding compiler modules (shown along side below). If you have them installed globally, that'd work too.
-After that, you can specify any of them from the custom tags by doing [something along the lines](https://muut.com/riotjs/guide/#pre-processor) of <script type="text/**js_type**">.
+After that, you can specify any of them from the custom tags by doing [something along the lines](https://muut.com/riotjs/guide/#pre-processor) of `<script type="text/js_type">` where *js_type* is one of the below:
 
 *  *coffeescript* (CoffeeScript is pre-installed along with lineman or this plugin) `npm update coffee-script`
 *  *es6* (ECMAScript 6) `npm install babel`
@@ -41,10 +43,13 @@ After that, you can specify any of them from the custom tags by doing [something
 
 If you insist on more, you can try to implement your own custom javascript [riot.parsers on the browser](https://muut.com/riotjs/compiler.html#any-language)
 
-> Note: I'm not sure if the custom parsers can be explicitly implemented in the browser. You might need to play around with the internal ["parser" option](https://github.com/ariesjia/grunt-riot#options) of grunt-riot that we use in this plugin. Extend the riot.compile object's options in your application.{coffee,js} config file. To see the current configuration, type `lineman config riot.compile`
+> Note: I'm not sure if the custom parsers can be explicitly implemented in the browser. You might need to play around with the internal ["parser" option](https://github.com/ariesjia/grunt-riot#options) of grunt-riot that we use in this plugin. Extend the riot.compile object's options in your application.{coffee,js} config file. To see the current configuration, type 
+```bash
+lineman config riot.compile`
+```
 
 ### HTML preprocessors
-* Jade 
+* *Jade*
 
 The plugin also supports tags created in [Jade](http://jade-lang.com). It's really nice and you should really try it out. You also get the bonus of using Jade templates outside of RIOT (in templates, pages directories etc) To use it, you need to install the [lineman-jade](https://github.com/aranasoft/lineman-jade/) plugin.
 
