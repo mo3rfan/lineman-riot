@@ -1,0 +1,49 @@
+{
+  "name": "lineman-riot",
+  "description": "RIOT.js plugin for Lineman with preprocessor support.",
+  "keywords": [
+    "lineman",
+    "grunt",
+    "riot",
+    "jade",
+    "typescript",
+    "livescript",
+    "coffeescript",
+    "riotjs",
+    "lineman plugin"
+  ],
+  "version": "0.1.0",
+  "homepage": "https://github.com/Power-Inside/lineman-riot",
+  "author": {
+    "name": "Mohammed Irfan"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Power-Inside/lineman-riot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Power-Inside/lineman-riot/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.9.2",
+    "find-root-package": "0.0.1",
+    "mkdirp": "~0.5.1",
+    "grunt-riot": "0.1.1"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.9.2"
+  },
+  "peerDependencies": {
+    "lineman": ">= 0.36.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/Power-Inside/lineman-riot/raw/master/LICENSE-BSD"
+    }
+  ],
+  "scripts": {
+    "postinstall": "node script/postinstall.js"
+  }
+}
