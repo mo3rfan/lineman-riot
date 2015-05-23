@@ -1,11 +1,12 @@
 ![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
-[![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)](https://gratipay.com/~mohammedirfan1992/)
-[![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
-[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
 [![Dependency Status](https://david-dm.org/Power-Inside/lineman-riot.svg)](https://david-dm.org/Power-Inside/lineman-riot)
 [![devDependency Status](https://david-dm.org/Power-Inside/lineman-riot/dev-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=devDependencies)
 [![peerDependency Status](https://david-dm.org/Power-Inside/lineman-riot/peer-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=peerDependencies)
+
+[![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)](https://gratipay.com/~mohammedirfan1992/)
+[![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
+[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Power-Inside/lineman-riot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
