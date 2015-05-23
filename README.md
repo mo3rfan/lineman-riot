@@ -1,7 +1,7 @@
-[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Ready)](https://waffle.io/Power-Inside/lineman-riot)
-![lineman-riot](http://i.imgur.com/gtkQhWe.png)
+[lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
 ![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)
+![![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Ready)](https://waffle.io/Power-Inside/lineman-riot)
 ![Dependency tracker](https://david-dm.org/Power-Inside/lineman-riot.svg)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Power-Inside/lineman-riot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
