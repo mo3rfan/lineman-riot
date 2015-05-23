@@ -14,6 +14,8 @@ lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT
 [![NPM](https://nodei.co/npm/lineman-riot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lineman-riot/)
 # Usage
 
+[![Join the chat at https://gitter.im/Power-Inside/lineman-riot](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Power-Inside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 At the root of your lineman project, do
 
 ```bash
