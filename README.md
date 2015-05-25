@@ -28,7 +28,7 @@ npm install lineman-riot --save-dev
 The most recent *riot.min.js* will be downloaded and (over)written in `./vendor/js/`.
 If that didn't happen for some reason, [download](https://muut.com/riotjs/download.html) a copy of riotjs (without compiler, preferably minified) and place it into `./vendor/js/`
 
-Alternatively: If you installed the [bower lineman plugin](https://github.com/linemanjs/lineman-bower), you can do `bower install riot` to install the riotjs runtime. (No need to do this if an up-to-date *riot.min.js* already exists)
+Alternatively (bower fanboys): If you installed the [bower lineman plugin](https://github.com/linemanjs/lineman-bower), you can do `bower install riot` to install the latest riotjs runtime. Make sure you have a bower.json file that specifies riot.js and also extend the js.vendor property to accomodate the downloaded riot.js file. It's all explained [here](https://github.com/linemanjs/lineman-bower#usage). (That's a lot of work!)
 
 A folder called `riottags` will be created in `./app/`. This is where all RIOT custom tags should go. Tags **should** have the extension as .tag
 
