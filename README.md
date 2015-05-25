@@ -4,10 +4,10 @@
 [![devDependency Status](https://david-dm.org/Power-Inside/lineman-riot/dev-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=devDependencies)
 [![peerDependency Status](https://david-dm.org/Power-Inside/lineman-riot/peer-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=peerDependencies)
 
+[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
+[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
 [![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)](https://gratipay.com/~mohammedirfan1992/)
 [![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
-[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
-[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Power-Inside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
@@ -64,13 +64,15 @@ RIOT compiler currently supports several javascript preprocessors and one HTML p
 
 ### Javascript preprocessors
  
-To write in one of the languages below, make sure you've installed their corresponding compiler modules (shown along side below). If you have them installed globally, that'd work too.
+To write in one of the languages below, make sure you've installed their corresponding compiler modules (shown along side below). If you have them installed globally, that could work too.
 After that, you can specify any of them from the custom tags by doing [something along the lines](https://muut.com/riotjs/guide/#pre-processor) of `<script type="text/js_type">` where *js_type* is one of the below:
 
-*  *coffeescript* (CoffeeScript is pre-installed along with lineman or this plugin) `npm update coffee-script`
-*  *es6* (ECMAScript 6) `npm install babel`
-*  *typescript* `npm install typescript-simple`
-*  *livescript* `npm install LiveScript`
+js_type                                                                          |  NPM package
+---------------------------------------------------------------------------------|---------------------------------
+*coffeescript* (CoffeeScript is pre-installed along with lineman or this plugin) | `npm update coffee-script`
+*es6* (ECMAScript 6)                                                             | `npm install babel` 
+*typescript*                                                                     | `npm install typescript-simple`
+*livescript*                                                                     | `npm install LiveScript`
 
 If you insist on more, you can try to implement your own custom javascript [riot.parsers on the browser](https://muut.com/riotjs/compiler.html#any-language)
 
