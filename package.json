@@ -41,7 +41,7 @@
   },
   "licenses": [
     {
-      "type": "BSD 2-Clause License",
+      "type": "BSD-2-Clause",
       "url": "http://github.com/Power-Inside/lineman-riot/raw/master/LICENSE"
     }
   ],

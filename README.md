@@ -7,7 +7,7 @@
 [![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)](https://gratipay.com/~mohammedirfan1992/)
 [![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
 [![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Power-Inside/lineman-riot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Power-Inside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
@@ -15,7 +15,6 @@ lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT
 [![NPM](https://nodei.co/npm/lineman-riot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lineman-riot/)
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/2449797f-b721-40e4-bc91-297e07ead4a3/432604/badge.svg)](https://semaphoreci.com/irfan/lineman-riot)
-[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
 
 # Usage
 
@@ -94,5 +93,3 @@ Jade also supports the javascript preprocessors mentioned above. Simply use `scr
 Logo credits: [Asad Ullah Khan](https://github.com/Cyber-Logic)
 
 Contributions welcome! Fork and send us a pull request.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-63359683-1/lineman-riot/README)](https://github.com/igrigorik/ga-beacon)
