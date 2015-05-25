@@ -30,20 +30,40 @@ If that didn't happen for some reason, [download](https://muut.com/riotjs/downlo
 
 Alternatively: If you installed the [bower lineman plugin](https://github.com/linemanjs/lineman-bower), you can do `bower install riot` to install the riotjs runtime. (No need to do this if an up-to-date *riot.min.js* already exists)
 
-A folder called `riottags` will be created in `./app/`. This is where all RIOT custom tags should go. Tags should have the extension as .tag
+A folder called `riottags` will be created in `./app/`. This is where all RIOT custom tags should go. Tags **should** have the extension as .tag
 
-Next, include your custom tags as mount points on your pages (eg, On 'vanilla' lineman projects, `./app/pages/index.us`) and [mount](https://muut.com/riotjs/guide/#mounting) them. The riot runtime is made available automatically as a combined javascript file. (`./generated/js/app.js`)
+Next, include your custom tags as mount points on your pages (eg, On 'vanilla' lineman projects, that'd be at `./app/pages/index.us`) and [mount](https://muut.com/riotjs/guide/#mounting) them. The riot runtime is made available automatically as a combined javascript file. (`./generated/js/app.js`)
 
-I'd recommend you install the [lineman-browserify](https://github.com/linemanjs/lineman-browserify/) plugin if you need to leverage [CommonJS support in RIOT](https://muut.com/riotjs/compiler.html#amd-and-commonjs).
+## Modular Javascript
+RIOT has support for [AMD/CommonJS](https://muut.com/riotjs/compiler.html#amd-and-commonjs). 
 
-When lineman-browserify plugin is installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the CommonJS syntax such as require statements and mount as shown in riot.js documentation.
+To make use of modular javascript, install only **one** of the following:
+
+For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/)
+For AMD, install [lineman-requirejs](https://github.com/frisb/lineman-requirejs)
+
+When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation.
+
+You can also explicitly change the modularization type. Set the override value for `lineman config lm_riot.modular` property in your module exports at `./config/applications.{coffee,js}`. The default value is "notset" and that causes it to fall back to CommonJS and then AMD mode (in that order). Supported string values are `amd`,`common` or `umd`.
+
+Example application.coffee configuration:
+
+```CoffeeScript
+module.exports -> (lineman)
+  app = lineman.config.application
+  
+  lm_riot:
+    modular: "common"
+  ...
+  ...
+```
 
 ## Pre-processor support
-
-RIOT compiler currently supports:
+ 
+RIOT compiler currently supports several javascript preprocessors and one HTML preprocessor.
 
 ### Javascript preprocessors
-
+ 
 To write in one of the languages below, make sure you've installed their corresponding compiler modules (shown along side below). If you have them installed globally, that'd work too.
 After that, you can specify any of them from the custom tags by doing [something along the lines](https://muut.com/riotjs/guide/#pre-processor) of `<script type="text/js_type">` where *js_type* is one of the below:
 
@@ -64,10 +84,14 @@ lineman config riot.compile
 
 The plugin also supports tags created in [Jade](http://jade-lang.com). It's really nice and you should really try it out. You also get the bonus of using Jade templates outside of RIOT (in templates, pages directories etc) To use it, you need to install the [lineman-jade](https://github.com/aranasoft/lineman-jade/) plugin.
 
-After that, write your custom tags in `./app/riottags/` with jade and **save it with .jade extension**. You can still use plain old .tag
+After that, write your custom tags in `./app/riottags/` with jade and **save it with .jade extension**. You can still use plain old .tag!
 
 Jade also supports the javascript preprocessors mentioned above. Simply use `script(type="text/livescript")`. Replace "livescript" with your choice of type as mentioned above.
 
 ## Credits
 
 Logo credits: [Asad Ullah Khan](https://github.com/Cyber-Logic)
+
+Contributions welcome! Fork and send us a pull request.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-63359683-1/lineman-riot/README)](https://github.com/igrigorik/ga-beacon)

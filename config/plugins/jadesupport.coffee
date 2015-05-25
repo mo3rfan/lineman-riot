@@ -4,7 +4,7 @@ module.exports = (lineman) ->
     files:
       jade:
         jadeRoot: "app/riottags/"
-        genJadetags: "generated/temptags"
+        genJade: "generated/temptags"
     
     config:
       jade:
@@ -13,7 +13,7 @@ module.exports = (lineman) ->
             expand: true
             src: "<%= files.jade.pages %>"
             cwd: "<%= files.jade.jadeRoot %>"
-            dest: "<%= files.jade.genJadetags %>"
+            dest: "<%= files.jade.genJade %>"
             ext: ".tag"
           }]
       prependTasks:

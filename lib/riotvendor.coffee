@@ -9,6 +9,7 @@ module.exports =
     topDir = findsRoot.findTopPackageJson dir
     riotTagDir = path.join topDir,'app/riottags'
     mkdirp riotTagDir
+    mkdirp path.join topDir, 'vendor/js'
     dest = path.join topDir, 'vendor/js/riot.min.js'
     file = fs.createWriteStream dest
     request = http

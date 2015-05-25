@@ -1,7 +1,9 @@
 module.exports = (lineman) ->
   app = lineman.config.application
   lmfiles = lineman.config.files
-  
+  app.lm_riot = new Object
+  app.lm_riot.modular = "notset"
+
   files:
     riotjade:
       app: "app/riottags/**/*.jade"
@@ -19,23 +21,30 @@ module.exports = (lineman) ->
         src:
           app.concat_sourcemap.js.src
             .concat "<%= files.riot.generated %>"
+    
     riot:
       compile:
         options:
           concat: true
           modular:
-            if app.browserify
+            if app.lm_riot.modular != "notset"
+              type: app.lm_riot.modular
+              deps: 'riot'
+            else if app.browserify
               type: 'common'
+              deps: 'riot'
+            else if app.requirejs
+              type: 'amd'
               deps: 'riot'
             else
               false
         files:
           if lmfiles.jade
             "<%= files.riot.generated %>": "<%= files.riot.app %>",
-            "<%= files.riot.generated %>": "<%= files.jade.genJadetags %>/**/*.tag"
+            "<%= files.riot.generated %>": "<%= files.jade.genJade %>/**/*.tag"
           else
             "<%= files.riot.generated %>": "<%= files.riot.app %>"
-    clean: ["<%= files.jade.genJadetags %>"].concat app.clean if lmfiles.jade
+    clean: ["<%= files.jade.genJade %>"].concat app.clean if lmfiles.jade
 
     watch:
       riot:
