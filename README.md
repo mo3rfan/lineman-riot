@@ -14,7 +14,7 @@ lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT
 
 [![NPM](https://nodei.co/npm/lineman-riot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lineman-riot/)
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/2449797f-b721-40e4-bc91-297e07ead4a3/432604/badge.svg)](https://semaphoreci.com/irfan/lineman-riot)      
+[![Build Status](https://semaphoreci.com/api/v1/projects/2449797f-b721-40e4-bc91-297e07ead4a3/432604/badge.svg)](https://semaphoreci.com/irfan/lineman-riot)
 [![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
 
 # Usage
