@@ -15,6 +15,8 @@ lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT
 [![NPM](https://nodei.co/npm/lineman-riot.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/lineman-riot/)
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/2449797f-b721-40e4-bc91-297e07ead4a3/432604/badge.svg)](https://semaphoreci.com/irfan/lineman-riot)      
+[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
+
 # Usage
 
 At the root of your lineman project, do
@@ -37,13 +39,13 @@ Next, include your custom tags as mount points on your pages (eg, On 'vanilla' l
 ## Modular Javascript
 RIOT has support for [AMD/CommonJS](https://muut.com/riotjs/compiler.html#amd-and-commonjs). 
 
-To make use of modular javascript, install only **one** of the following:
+To make use of modular javascript, install any **one** of the following:
 
 * For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/)
 
 * For AMD, install [lineman-requirejs](https://github.com/frisb/lineman-requirejs)
 
-When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation.
+When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation. (I did not test this, but it should work)
 
 You can also explicitly change the modularization type. Set the override value for `lineman config lm_riot.modular` property in your module exports at `./config/applications.{coffee,js}`. The default value is "*notset*" and that causes it to fall back to CommonJS and then AMD mode (in that order). Supported string values are `amd`,`common` or `umd`.
 
