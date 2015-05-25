@@ -39,12 +39,13 @@ RIOT has support for [AMD/CommonJS](https://muut.com/riotjs/compiler.html#amd-an
 
 To make use of modular javascript, install only **one** of the following:
 
-For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/)
-For AMD, install [lineman-requirejs](https://github.com/frisb/lineman-requirejs)
+* For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/)
+
+* For AMD, install [lineman-requirejs](https://github.com/frisb/lineman-requirejs)
 
 When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation.
 
-You can also explicitly change the modularization type. Set the override value for `lineman config lm_riot.modular` property in your module exports at `./config/applications.{coffee,js}`. The default value is "notset" and that causes it to fall back to CommonJS and then AMD mode (in that order). Supported string values are `amd`,`common` or `umd`.
+You can also explicitly change the modularization type. Set the override value for `lineman config lm_riot.modular` property in your module exports at `./config/applications.{coffee,js}`. The default value is "*notset*" and that causes it to fall back to CommonJS and then AMD mode (in that order). Supported string values are `amd`,`common` or `umd`.
 
 Example application.coffee configuration:
 
@@ -54,8 +55,6 @@ module.exports -> (lineman)
   
   lm_riot:
     modular: "common"
-  ...
-  ...
 ```
 
 ## Pre-processor support

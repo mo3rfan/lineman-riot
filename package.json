@@ -46,6 +46,7 @@
     }
   ],
   "scripts": {
-    "postinstall": "node script/postinstall.js"
+    "postinstall": "node script/postinstall.js",
+    "test": "npm test --ignore-scripts"
   }
 }
