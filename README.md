@@ -57,6 +57,7 @@ module.exports -> (lineman)
   lm_riot:
     modular: "common"
 ```
+> Note if you're facing problems, try moving the plugins for modular javascript dependencies to the top of the list in package.json
 
 ## Pre-processor support
  
@@ -66,10 +67,10 @@ RIOT compiler currently supports several javascript preprocessors and one HTML p
  
 To write in one of the languages below, make sure you've installed their corresponding compiler modules (shown along side below). If you have them installed globally, that could work too.
 After that, you can specify any of them from the custom tags by doing [something along the lines](https://muut.com/riotjs/guide/#pre-processor) of `<script type="text/js_type">` where *js_type* is one of the below:
-
+ 
 js_type                                                                          |  NPM package
 ---------------------------------------------------------------------------------|---------------------------------
-*coffeescript* (CoffeeScript is pre-installed along with lineman or this plugin) | `npm update coffee-script`
+*coffeescript* (Preinstalled with lineman)                                       | `npm update coffee-script`
 *es6* (ECMAScript 6)                                                             | `npm install babel` 
 *typescript*                                                                     | `npm install typescript-simple`
 *livescript*                                                                     | `npm install LiveScript`
@@ -89,9 +90,9 @@ The plugin also supports tags created in [Jade](http://jade-lang.com). It's real
 After that, write your custom tags in `./app/riottags/` with jade and **save it with .jade extension**. You can still use plain old .tag!
 
 Jade also supports the javascript preprocessors mentioned above. Simply use `script(type="text/livescript")`. Replace "livescript" with your choice of type as mentioned above.
-
+ 
 ## Credits
-
+ 
 Logo credits: [Asad Ullah Khan](https://github.com/Cyber-Logic)
 
-Contributions welcome! Fork and send us a pull request.
+Contributions welcome! Fork and send a pull request.

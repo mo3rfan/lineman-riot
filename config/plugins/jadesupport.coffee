@@ -19,4 +19,4 @@ module.exports = (lineman) ->
       prependTasks:
         common: ["jade:jadeTag"].concat app.prependTasks.common
       appendTasks:
-        common: app.appendTasks.concat["clean"]
+        common: app.appendTasks.common.concat["clean"]
