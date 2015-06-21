@@ -27,7 +27,7 @@ npm install lineman-riot --save-dev
 > Note: If you're getting errors, you may want to try running npm as root (sudo). If you're on an ancient filesystem that does not support symlinks (FAT32 etc, like mine), try passing the --no-bin-links flag.
 
 The most recent *riot.min.js* will be downloaded and (over)written in `./vendor/js/`.
-If that didn't happen for some reason, [download](https://muut.com/riotjs/download.html) a copy of riotjs (without compiler, preferably minified) and place it into `./vendor/js/`
+If that didn't happen for some reason, [download](https://muut.com/riotjs/download.html) a copy of riotjs (without compiler, preferably minified) and place it into `./vendor/js/` (ensure the filename is riot.js and nothing else)
 
 Alternatively (bower fanboys): If you installed the [bower lineman plugin](https://github.com/linemanjs/lineman-bower), you can do `bower install riot` to install the latest riotjs runtime. Make sure you have a bower.json file that specifies riot.js and also extend the js.vendor property to accomodate the downloaded riot.js file. It's all explained [here](https://github.com/linemanjs/lineman-bower#usage). (That's a lot of work!)
 
@@ -40,11 +40,11 @@ RIOT has support for [AMD/CommonJS](https://muut.com/riotjs/compiler.html#amd-an
 
 To make use of modular javascript, install any **one** of the following:
 
-* For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/)
+* For CommonJS, you can install [lineman-browserify](https://github.com/linemanjs/lineman-browserify/) (More details on this given below)
 
 * For AMD, install [lineman-requirejs](https://github.com/frisb/lineman-requirejs)
 
-When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation. (I did not test this, but it should work)
+When one of the above plugins are installed, lineman-riot will automatically adjust itself the next time you execute `lineman run` and you need to start using the appropriate syntax and mount as shown in riot.js documentation. (I did not test AMD, but it should work. If it doesn't, Do not hesitate to contact me. I'll be around on gitter chat where you can join in from the badge attached above or simply open an issue here on github and describe your problem elaborately.)
 
 You can also explicitly change the modularization type. Set the override value for `lineman config lm_riot.modular` property in your module exports at `./config/applications.{coffee,js}`. The default value is "*notset*" and that causes it to fall back to CommonJS and then AMD mode (in that order). Supported string values are `amd`,`common` or `umd`.
 
@@ -57,10 +57,20 @@ module.exports -> (lineman)
   lm_riot:
     modular: "common"
 ```
-> Note if you're facing problems, try moving the plugins for modular javascript dependencies to the top of the list in package.json
+
+### CommonJS instructions
+
+If you plan to use CommonJS; after you've installed lineman-browserify as mentioned above, edit `./app/js/entrypoint.{coffee,js}` and add the following lines to load your RIOT tags modularly:
+
+```CoffeeScript
+window.riot = require("riot")
+window.tags = require("riottags/riot.tags")
+```
+
+> Make sure lineman-browserify dependency is at the top of the list in `./package.json` to avoid issues.
 
 ## Pre-processor support
- 
+  
 RIOT compiler currently supports several javascript preprocessors and one HTML preprocessor.
 
 ### Javascript preprocessors

@@ -9,7 +9,7 @@ module.exports = (lineman) ->
       app: "app/riottags/**/*.jade"
     riot:
       app: "app/riottags/**/*.tag"
-      generated: "generated/js/riot.riot.js"
+      generated: "app/js/riottags/riot.tags.js"
   config:
     loadNpmTasks: app.loadNpmTasks.concat "grunt-riot"
 
@@ -29,13 +29,10 @@ module.exports = (lineman) ->
           modular:
             if app.lm_riot.modular != "notset"
               type: app.lm_riot.modular
-              deps: 'riot'
             else if app.browserify
               type: 'common'
-              deps: 'riot'
             else if app.requirejs
               type: 'amd'
-              deps: 'riot'
             else
               false
         files:

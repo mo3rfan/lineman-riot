@@ -10,7 +10,7 @@ module.exports =
     riotTagDir = path.join topDir,'app/riottags'
     mkdirp riotTagDir
     mkdirp path.join topDir, 'vendor/js'
-    dest = path.join topDir, 'vendor/js/riot.min.js'
+    dest = path.join topDir, 'vendor/js/riot.js'
     file = fs.createWriteStream dest
     request = http
       .get "https://raw.githubusercontent.com/muut/riotjs/master/riot.min.js",
