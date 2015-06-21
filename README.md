@@ -65,7 +65,10 @@ If you plan to use CommonJS; after you've installed lineman-browserify as mentio
 ```CoffeeScript
 window.riot = require("riot")
 window.tags = require("riottags/riot.tags")
+riot.mount('*')
 ```
+
+You get the idea!
 
 > Make sure lineman-browserify dependency is at the top of the list in `./package.json` to avoid issues.
 
