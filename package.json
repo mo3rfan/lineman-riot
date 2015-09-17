@@ -28,13 +28,13 @@
     "url": "https://github.com/Power-Inside/lineman-riot/issues"
   },
   "dependencies": {
-    "coffee-script": "~1.9.2",
-    "find-root-package": "~0.0.1",
-    "mkdirp": "~0.5.1",
-    "grunt-riot": "~0.1.3"
+    "coffee-script": "^1.10.0",
+    "find-root-package": "^0.0.1",
+    "mkdirp": "^0.5.1",
+    "grunt-riot": "^0.1.3"
   },
   "devDependencies": {
-    "coffee-script": "~1.9.2"
+    "coffee-script": "^1.10.0"
   },
   "peerDependencies": {
     "lineman": ">= 0.36.0"
