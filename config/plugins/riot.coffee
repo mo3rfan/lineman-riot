@@ -37,8 +37,7 @@ module.exports = (lineman) ->
               false
         files:
           if lmfiles.jade
-            "<%= files.riot.generated %>": "<%= files.riot.app %>",
-            "<%= files.riot.generated %>": "<%= files.jade.genJade %>/**/*.tag"
+            "<%= files.riot.generated %>": ["<%= files.riot.app %>", "<%= files.jade.genJade %>/**/*.tag"]
           else
             "<%= files.riot.generated %>": "<%= files.riot.app %>"
     clean: ["<%= files.jade.genJade %>"].concat app.clean if lmfiles.jade
