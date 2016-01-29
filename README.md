@@ -1,14 +1,14 @@
 ![lineman-riot](http://i.imgur.com/gtkQhWe.png)
 
-[![Dependency Status](https://david-dm.org/Power-Inside/lineman-riot.svg)](https://david-dm.org/Power-Inside/lineman-riot)
-[![devDependency Status](https://david-dm.org/Power-Inside/lineman-riot/dev-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=devDependencies)
-[![peerDependency Status](https://david-dm.org/Power-Inside/lineman-riot/peer-status.svg)](https://david-dm.org/Power-Inside/lineman-riot#info=peerDependencies)
+[![Dependency Status](https://david-dm.org/PowerInside/lineman-riot.svg)](https://david-dm.org/PowerInside/lineman-riot)
+[![devDependency Status](https://david-dm.org/PowerInside/lineman-riot/dev-status.svg)](https://david-dm.org/PowerInside/lineman-riot#info=devDependencies)
+[![peerDependency Status](https://david-dm.org/PowerInside/lineman-riot/peer-status.svg)](https://david-dm.org/PowerInside/lineman-riot#info=peerDependencies)
 
-[![Build Status](https://travis-ci.org/Power-Inside/lineman-riot.svg?branch=master)](https://travis-ci.org/Power-Inside/lineman-riot)
-[![Stories in Ready](https://badge.waffle.io/Power-Inside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/Power-Inside/lineman-riot)
+[![Build Status](https://travis-ci.org/PowerInside/lineman-riot.svg?branch=master)](https://travis-ci.org/PowerInside/lineman-riot)
+[![Stories in Ready](https://badge.waffle.io/PowerInside/lineman-riot.png?label=ready&title=Issues)](https://waffle.io/PowerInside/lineman-riot)
 [![Git tips](https://img.shields.io/gratipay/mohammedirfan1992.svg)](https://gratipay.com/~mohammedirfan1992/)
-[![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Power-Inside&url=https%3A%2F%2Fgithub.com%2FPower-Inside%2Flineman-riot)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Power-Inside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Flattr this](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/thing/bd8dc562ff62df8213ead309ba35096f)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PowerInside/lineman-riot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 lineman-riot is a plugin for [lineman](http://linemanjs.com) to precompile [RIOT](https://muut.com/riotjs/) tags.
 
